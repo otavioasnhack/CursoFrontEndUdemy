@@ -30,3 +30,16 @@ li {
     font-weight: bold;
     color: gray;
 }
+.destaque {
+    color: steelblue;
+    font-weight: bold;
+}
+/* Estilizando CLASSE no arquivo HTML */
+.outroAgora {
+    background-color: beige;
+    font-family: Helvetica;
+}
+/* Estilizando ID no arquivo HTML */
+#titulo {
+    color: cornflowerblue;
+}
