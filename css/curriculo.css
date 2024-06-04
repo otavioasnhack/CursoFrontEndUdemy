@@ -1,0 +1,32 @@
+h1 {
+    color: #00f;
+    text-align: center;
+    background-color: #f00;
+    font-size: 80px;
+    font-family: Helvetica;
+}
+h2 {
+    color: #f00;
+    background-color: #00f;
+    text-transform: capitalize;
+    text-decoration: overline;
+    text-align: left;
+}
+a {
+    text-decoration: none;
+}
+p {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    color: aquamarine;
+}
+strong {
+    color: black;
+}
+
+li {
+    font-weight: bold;
+    color: gray;
+}
