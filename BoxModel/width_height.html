@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <style>
-            h1 {
+            /*h1 {
                 background-color: gray;
                 padding: 50px;
                 margin: 70px;
@@ -11,19 +11,56 @@
             h2 {
                 background-color: brown;
                 width: 45%; /* Pode usar porcentagem e pixel - Referente a largura do elemento */
-                height: 100px; /* Não é recomendado usar porcentagem - Referente a altura do elemento */
-                margin: 60px;
-                padding: 30px;
-            }
+                /* height: 100px; /* Não é recomendado usar porcentagem - Referente a altura do elemento */
+                /* margin: 60px; */
+                /* padding: 30px; */
+            /* }
             p {
                 background-color: blue;
+            } */
+            .box-model {
+                width: 50%;
+                height: 100px;
+                background-color: gray;
+            }
+            .margin {
+                margin: 70px 0 70px 0;
+                background-color: blue;
+                padding: 50px;
+                border-style: dashed;
+                border-width: 10px;
+                border-color: chartreuse;
+            }
+            .padding {
+                padding: 50px;
+                background-color: aquamarine;
+                border-style: double;
+            }
+            .border {
+                background-color: blueviolet;
+                border-top: 10px solid rgb(20, 15, 15);
+                border-right: 10px dotted gray;
+                border-bottom: 10px dashed red;
+                border-left: 10px groove greenyellow;
+                padding: 50px;
             }
         </style>
     </head>
     <body>
         <h1>Box Model</h1>
-        <h2>Width e Height</h2>
+        <h2 class="box-model">Width e Height</h2>
         <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <h2 class="margin">Margin</h2>
+        <h2 class="padding">padding</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <h2>Border</h2>
+        <p class="border">Lorem ipsum dolor sit amet.</p>
         <p>Lorem ipsum dolor sit amet.</p>
         <p>Lorem ipsum dolor sit amet.</p>
     </body>
