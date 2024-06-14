@@ -4,19 +4,35 @@
         <meta charset="utf-8">
         <title>Introdução Imagens</title>
         <style>
-            .logodif {
-                width: 300px;
-            }
-            .logo-html {
-                float: left;
-            }
-            .logo-css {
-                float: right;
-            }
-            p {
-                line-height: 1.5;
-                font-family: sans-serif;
-            }
+body {
+            font-size: 22px;
+            font-family: sans-serif;
+            width: 700px;
+            margin: auto;
+
+            background-image: url(imagens/bg.jpg);
+            background-repeat: no-repeat; /* O padrão é o repeat / X - eixo horizontal e Y - eixo vertical */
+            background-attachment: fixed; /* O padrão é o scroll */
+            background-size: cover; /* Primeiro valor é largura e o segundo valor é altura / CONTAIN - mostra a imagem mesmo que duplique. COVER - Ocupa toda área disponível mesmo que esconda parte da imagem*/
+            background-position: right bottom; /* Pode usar pixel ou porcentagem / As nomeclaturas das posiçoes funcionam, a primeira é referente a horizontal */
+        }
+
+        p {
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .img-logo {
+            width: 400px;
+        }
+
+        .img-html {
+            float: left;
+        }
+
+        .img-css {
+            float: right;
+        }
         </style>
     </head>
     <body>
