@@ -9,6 +9,7 @@ body {
     height: 500px;
     background-size: cover;
     background-position: right center;
+    padding-top: 1px;
 }
 
 .hero-content {
@@ -22,6 +23,7 @@ body {
     font-size: 56px;
     text-shadow: 2px 2px 2px black; /* primeiro valor para o eixo horizontal, valor positivo para direita e negativo p esquerda/ segundo valor eixo vertical, valor positvo vai p baixo e valor negativo sobe / terceiro valor o de esfumaçamento */
     text-transform: uppercase;
+    margin-bottom: 0;
 }
 
 .hero-content p {
@@ -30,4 +32,69 @@ body {
     display: inline-block;
     padding: 16px;
     border-bottom: solid 2px;
+}
+
+.hero nav li {
+    display: inline-block;
+    list-style-type: none;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+
+.hero nav ul {
+    margin: 20px 80px 0 0;
+    text-align: right;
+}
+
+.hero nav a {
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Distanciamento de uma fonte para outra */
+}
+
+.hero nav a:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    max-width: 860px;
+}
+
+article {
+    background-color: white;
+    padding: 16px;
+    margin-bottom: 36px;
+    margin-top: 32px;
+}
+
+article h2 {
+    border-bottom: 2px solid #ccc;
+    background-color: #eee;
+    margin-top: 0;
+    padding: 12px;
+}
+
+.btn {
+    background-color: #cdc7c3;
+    padding: 16px;
+    display: inline-block;
+    border-radius: 6px; /* O quanto deseja arredondar a borda */
+    text-decoration: none;
+    /* width: fit-content; (Ajusta a largura ao conteúdo) */
+}
+
+.foot {
+    background-color: #6b6c68;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px black; /* 1° valor pra direita, 2° valor pra baixo e o 3° para o esfumaçamento*/
+    letter-spacing: 2px; /* Espaçamento entre as letras */
 }
