@@ -1,0 +1,73 @@
+Display FLEX;
+
+ A propriedade serve para os elementos filhos de onde foi adicionado o display flex.
+
+flex-wrap: nowrap(padrão) e wrap(Utilizado para quando os elementos atingirem o max tamanho possível, quebre a linha)
+ATALHO: flex-flow
+flex-direction: row(padrão), column(transforma os elementos em coluna), row-reverse/ column-reverse(Inverte a ordem)
+
+- Propriedade justify-content; (HORIZONTAL)
+
+flex-start(padrão)
+flex-end(Leva os elementos para o final(lado direito))
+center(centraliza os elementos)
+space-around(Pega o espaço que sobra e dividi ao redor dos elementos)
+space-between(Pega o espaço que sobra e adiciona no meio dos elementos)
+space-evenly(Dividi os espaços que sobram de forma exata)
+
+
+- Propriedade align-items; (VERTICAL) (QUANDO POSSUI UMA LINHA)
+
+stretch(padrão)
+flex-start(começo(parte superior))
+flex-end(final(parte inferior))
+center(centro)
+baseline()
+
+
+- Propriedade align-content; (QUANDO POSSUI MAIS DE UMA LINHA)
+
+flex-start(começo(parte superior))
+flex-end(final(parte inferior))
+center(centro)
+space-around(Pega o espaço que sobra e dividi ao redor dos elementos)
+space-between(Pega o espaço que sobra e adiciona no meio dos elementos)
+space-evenly(Dividi os espaços que sobram de forma exata)
+
+
+- Propriedade Main; (HORIZONTAL)
+
+main-size()
+main-axis()
+main-start()
+main-end()
+
+OBS: Se o flex-direction for row(permanece igual), se for column(inverte os eixos), row-reverse(main da direita p/ esquerda), column-reverse(main de baixo pra cima(invertendo os eixos))
+
+- Propriedade Cross; (VERTICAL)
+
+cross-size()
+cross-axis()
+cross-start()
+cross-end()
+
+- Propriedade flex-basis;
+
+auto(Se tiver um width, mantem o valor do mesmo com o flex-direction row ou seja, padrão/ se o valor for column, ele se baseia na altura)
+
+
+- Propriedade flex-grow; (Pega os espaços sobrando e distribui entre os elementos) 
+  -> Espaço que sobra(valor padrão - 0)
+
+- Propriedade flex-shrink; (Distribui o espaço necessário para que possa diminuir para que caiba no container)
+  -> Espaço que falta(valor padrão - 1)
+ 
+ ATALHO: flex: 1° valor - grow, 2° valor - shrink, 3° valor - basis.
+
+ - Propriedade order; (valor padrão - 0 e quanto maior for o número passado, mais pro final o mesmo vai ficar)
+
+ - Propriedade align-self; 
+
+flex-start(começo(parte superior))
+flex-end(final(parte inferior))
+center(centro)
