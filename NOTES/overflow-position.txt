@@ -1,0 +1,26 @@
+Propriedade OVERFLOW;
+
+hidden; (Ajusta o conteúdo que excede e esconde a parte excedente)
+scroll; (Ajusta o conteúdo que excede e adiciona uma barra de rolagem)
+auto; (Adiciona barra de rolagem somente na direção necessária(horizontal ou vertical))
+visible; (padrão)
+
+- Serve para tratar o conteúdo que excede ao elemento.
+
+
+Propriedade POSITION;
+
+static; (padrão)
+relative; (move o elemento ao 'contrário')
+absolute; (Deixa de relacionar com o 'elemento pai' e sai do fluxo natural do documento)
+fixed; (Relaciona sempre com o browser(viewport) e sai do fluxo natural do documento)
+sticky; (Funciona melhor com top ou bottom e fixa de acordo com relação da propriedade selecionada)
+
+- Serve para posicionar os elementos na tela. Necessário trabalhar com propriedades(top, right, bottom e left).
+- O valor absolute se o elemento pai tiver o valor relative, ele se relaciona com o mesmo e se for static, não se relaciona e se posiciona longe do elemento pai.
+
+
+Propriedade Z-INDEX;
+
+- Serve para sobrepor elementos, inicia no 0 e os elementos com o número maior ficam na frente.
+
