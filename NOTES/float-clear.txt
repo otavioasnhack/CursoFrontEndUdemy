@@ -1,0 +1,17 @@
+Propriedade FLOAT;
+
+right;
+left;
+none(padrão);
+
+- Float serve para posicionar uma imagem ao redor de um texto.
+- Usando o float(right ou left) faz os elementos sairem do fluxo normal e o elemento seguinte vai tentar ocupar o espaço.
+
+
+Propriedade CLEAR;
+
+right;
+left;
+both(Limpa qualquer elemento que possui a propriedade float(right ou left) antes).
+
+- Clear serve para limpar elementos anteriores que possuem um float(right ou left).

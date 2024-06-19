@@ -1,0 +1,5 @@
+ELEMENTOS DE LINHA 
+Tags - a, b, strong, em
+
+ELEMENTOS DE BLOCO
+Tags - h1 ao h6, p, ul, ol, li, div
