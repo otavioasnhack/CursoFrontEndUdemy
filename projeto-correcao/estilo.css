@@ -1,0 +1,58 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../ProjetoCSS-flexbox-desafio/imagens/bg-2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.header {
+    margin: 100px auto 0;
+    color: white;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 0;
+}
+
+.header p {
+    background-color: rgba(0, 0, 0, .7);
+    margin-top: 0;
+    padding: 16px;
+    border-bottom: 2px solid;
+    display: inline-block;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    background-color: white;
+    width: 860px;
+    margin: auto;
+  
+}
+
+.container-content {
+    flex-basis: 250px;
+    flex-grow: 1;
+    /* margin-top: 50px; */
+}
+
+.container-content img {
+    width: 100%;
+    display: block;
+}
+
+.container-content p {
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
