@@ -1,0 +1,56 @@
+Border-radius
+- É possível definir 4 valores, começando do canto superior esquerdo e indo sentido horário.
+- Também é possível usando a barra "/" separando os valores para criar elipses. Primeiro valor eixo HORIZONTAL e o segundo VERTICAL.
+
+Box-shadow
+- 1° valor é o deslocamento horizontal(eixo X) número positivo vai pra direita e número negativo vai pra esquerda.
+- 2° valor é o deslocamento vertical (eixo Y) número positivo vai pra baixo e número negativo vai pra cima.
+- 3° valor de esfumaçamento.
+- 4° valor é a cor desejada.
+- Antes da cor, ou seja assumindo o 4° valor pode inserir um número em px para a ampliar ou reduzir o esfumaçamento.
+- Também é possível adicionar outra sombra, limitado as duas por uma vírgula ",". 1° fica pra cima e 2° para baixo.
+
+Text-shadow
+- 1° valor é o deslocamento horizontal(eixo X) número positivo vai pra direita e número negativo vai pra esquerda.
+- 2° valor é o deslocamento vertical (eixo Y) número positivo vai pra baixo e número negativo vai pra cima.
+- 3° valor de esfumaçamento.
+- 4° valor é a cor desejada.
+
+Outline
+- O contorno na propriedade outline, não afeta o tamanho e posição do elemento. (Diferenciando do border).
+- As ramificações da propriedade se assemelham as do border.
+- A possibilidade de trabalhar com o "offset", e o valor passado pode ser em px para distanciar do elemento no caso de valor positivo.
+
+Font-face
+- Pode mudar a familia de fonte da nossa página, diferente da propriedade font-family que os valores passado precisam estar instalados no browser.
+- É possível importar um arquivo externo de fonte e utiliza uma diretiva -
+    @font-face {
+    font-family: nome da fonte; 
+    src: url(caminho do arquivo), OBS: usando a vírgula pode adicionar mais arquivos de fonte só passando url(caminho de outra fonte)
+- OBS: Informa pro browser o formato do arquivo.
+    src: url(caminho do arquivo), format("truetype") pro  formato ttf 
+    src: url(caminho do arquivo), format("woff") pro  formato woff
+    src: url(caminho do arquivo), format("svg") pro  formato svg 
+    }
+- OBS: Procura uma fonte instalada no SO.
+    src: local("nome da fonte")
+- Biblioteca de fontes : fontsquirrel.com
+
+
+Google fonts
+- A url do site é fonts.google.com, para baixar a familia de fonte que deseja.
+- O site tem a opção de baixar usando a tag link e a diretiva @import.
+
+Transition
+- Fazer a mudança de um valor de uma propriedade de forma suave.
+- Geralmente usada na transição do hover.
+- É possível animar mais de uma propriedade.
+- Pode animar tempos diferentes para propriedades diferentes, usando virgula para as propriedades e para os valores de tempo.
+
+- transition-property: width; (propriedade que deseja mudar). all; (anima mais de uma propriedade)
+- transition-duration: 1s; (quanto tempo essa animação vai acontecer).
+- transition-timing-function: linear; (animação da mesma velocidade), ease; (desacelera no final), ease-in; (acelera no final), ease-out; (inicia constante e desacelera no final), ease-in-out; (acelera no inicio e desacelera no final).
+   Também recebe o valor: cubic-bezier(); Pode usar um site chamado cubic bezier para determinar a forma de movimentação do objeto.
+- transition-delay: 1s; (Atrasa um pouco a animação).
+    ABREVIAÇÃO:
+- transition: property(all) durantion(0s) function(ease) delay(0s) - recebe os valores nessa ordem (valores padrões)
