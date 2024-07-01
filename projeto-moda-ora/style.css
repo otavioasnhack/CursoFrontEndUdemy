@@ -1,0 +1,114 @@
+:root {
+    --large-default-padding: 6.5em;
+    --medium-default-padding: 4em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 64em;
+    margin: 1.25em auto;
+}
+
+h1,
+h2 {
+    font-family: 'Viaoda Libre', cursive;
+    font-weight: normal;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: #162028;
+}
+
+.logo {
+    color: white;
+    margin: .5em 0 .5em 8.4375em;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1em 0 0;
+    padding: 1em;
+}
+
+.nav a {
+    color: #425564;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: .15em;
+    transition: color .3s linear;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+.description-content {
+    padding: var(--medium-default-padding) var(--large-default-padding);padding: var(--medium-default-padding) var(--large-default-padding);
+    text-align: center;
+}
+
+.description-content h2 {
+    font-size: 35px;
+    color: #252525;
+}
+
+.description-content p {
+    font-size: 16px; /* ou 1em*/
+    color: #555;
+    line-height: 2;
+}
+
+.section-cards {
+    display: flex;
+    padding: 0 var(--large-default-padding) var(--medium-default-padding);
+}
+
+.cards {
+    text-align: center;
+}
+
+.title-cards {
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: .15em;
+    font-weight: bold;
+}
+
+.about {
+    background-color:#003d52;
+    color: white;
+    background-image: url(imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: var(--large-default-padding);
+}
+
+.about h2 {
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+.about p {
+    line-height: 1.5;
+    width: 70%;
+}
+
+.footer {
+    background: #0b171f;
+    padding: 29px;
+    font-size: 12px;
+    color: #6f8597;
+    letter-spacing: 5px;
+    text-align: center;
+}
