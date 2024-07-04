@@ -1,0 +1,7 @@
+CSS Reset
+- O código disponibilizado no site abaixo, vai zerar todas propriedades padrões do browser.
+- Site: meyerweb.com 
+
+Normalize.CSS
+- Padroniza as propriedades padrões para todos os tipos de browser.
+- Site: necolas.github.io
