@@ -1,0 +1,163 @@
+:root {
+    --yellow-color: #FED001;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Inter", sans-serif;
+    /* font-weight: 400; */
+}
+
+p,
+a {
+    font-size: 1.6rem;
+}
+
+nav a {
+    color: inherit;
+}
+
+.btn {
+    background-color: var(--yellow-color);
+    padding: 16px 46px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #2a2a2a;
+    font-size: 1.8rem;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.wrapperContainer-dark {
+    background-color: #2a2a2a;
+    color: #fafafa;
+}
+
+.wrapperContainer-light {
+    background-color: #fafafa;
+}
+
+.wrapperContainer-dark2 {
+    background-color: #003464;
+    color: #fafafa;
+}
+
+.container {
+    max-width: 127.6rem;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding:  16px 0;
+    align-items: center;
+    color: var(--yellow-color);
+}
+
+.header-nav a {
+    padding: 1rem 1.6rem;
+    text-decoration: none;
+    border: 1px solid;  
+}
+
+.header-nav ul {
+    display: flex;
+    gap: .6rem;
+    list-style-type: none;
+}
+
+.header-nav a:hover {
+    background-color: black;
+}
+
+.wrapperContainer-yellow {
+    background-image: linear-gradient(transparent, rgb(228, 228, 109));
+}
+
+.heroBanner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroBanner h1 {
+    font-size: 7rem;
+}
+
+.cursos {
+    text-align: center;
+    padding-top: 1px;
+}
+
+.cursosTitle {
+    font-size: 4rem;
+}
+
+.cursosContainer {
+    display: flex;
+    text-align: left;
+    gap: 2rem;
+}
+
+.cursosCard {
+    border: 1px solid #949494;
+    border-radius: 9px;
+    flex-grow: 1;
+}
+
+.cursosCard img {
+    display: block;
+    width: 100%;
+}
+
+.cursosCard h2{
+    font-size: 2.4rem;
+}
+
+.cursosCard p {
+    font-size: 1.8rem;
+    letter-spacing: 1.5;
+}
+
+.cursosCard-content {
+    padding: 1rem;
+}
+
+.schoolContainer {
+    display: flex;
+    gap: 6rem;
+    padding-top: 6rem;
+}
+
+.schoolContent h1 {
+    font-size: 4rem;
+}
+
+.schoolContent p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.contactTitle {
+    text-align: center;
+    font-size: 4rem;
+    padding: 30px;
+}
+
+.contactAdress {
+    text-align: right;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: 3rem 0;
+    font-style: normal;
+}
+
+.footer {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 4.5rem;
+}

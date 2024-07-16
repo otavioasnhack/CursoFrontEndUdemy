@@ -1,79 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">  
+    <meta charset="UTF-8">
+    <meta name="author" content="Otávio Nepomuceno" />
+    <meta name="description" content="Projeto do curso Front-End de HTML e CSS" />
+    <link rel="stylesheet" href="style.css">
     <title>Projeto Aprenser</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <header class="container">
-            <img src="imagens/logoAprenser.png" alt="Logo Aprenser">
-            <nav>
+    <div class="wrapperContainer-dark">
+        <header class="container header">
+            <img src="imagens/logoAprenser.png" alt="logoAprenser">
+            
+            <nav class="header-nav">
                 <ul>
-                    <li><a href="#">Cursos</a></li>
-                    <li><a href="#">Nossa Escola</a></li>
-                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#escola">Nossa Escola</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
                 </ul>
             </nav>
         </header>
     </div>
-    
     <main>
-        <div>
-            <section class="container">
-                <h1>O saber é o que transforma nosso SER</h1>
-                <a href="#" class="btn">Saiba mais</a>
-                <img src="imagens/HeroImage.png" alt="Moça com a flor">
+        <div class="wrapperContainer-yellow">
+            <section class="container heroBanner">
+                <div class="heroBanner-content">
+                    <h1>O saber é o que transforma nosso <span class="upper">ser</span></h1>
+                    <a href="#" class="btn">Saiba mais</a>
+                </div>
+                <img src="imagens/HeroImage.png" alt="Mulher segurando uma flor">
             </section>
         </div>
         
-        <div>
-            <section class="container">
-                <h1>Principais Cursos</h1>
+        <div class="wrapperContainer-light">
+            <section class="container cursos" id="cursos">
+                <h1 class="cursosTitle">Principais Cursos</h1>
                 <div class="cursosContainer">
-                    <article>
-                        <img src="imagens/curso-design.png" alt="Design para web">
-                        <h2>Design para web</h2>
-                        <p>O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs atraentes e funcionais para sites e aplicativos móveis.</p>
+                    <article class="cursosCard">
+                        <img src="imagens/curso-design.png" alt="Curso Design">
+                        <div class="cursosCard-content">
+                            <h2>Design para web</h2>
+                            <p>O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs atraentes e funcionais para sites e aplicativos móveis.</p>
+                        </div>
+                        </article>
+                        
+                    <article class="cursosCard">
+                        <img src="imagens/curso-design-1.png" alt="Curso Front-End">
+                        <div class="cursosCard-content">
+                            <h2>Front End Developer</h2>
+                            <p>Aprenda HTML, CSS e Javascript e crei interfaces ricas e semânticas para páginas web, aplicativos on-line ou até mesmo aplicações para aparelhos celulares.</p>
+                        </div>
                     </article>
-                    
-                    <article>
-                        <img src="imagens/curso-design-1.png" alt="">
-                        <h2>Front End Developer</h2>
-                        <p>Aprenda HTML, CSS e Javascript e crei interfaces ricas e semânticas para páginas web, aplicativos on-line ou até mesmo aplicações para aparelhos celulares</p>
-                    </article>
-                    
-                    <article>
-                        <img src="imagens/curso-design-2.png" alt="">
-                        <h2>Back End Developer</h2>
-                        <p>Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de banco de dados e aprenderá como funciona o protocolo HTTP na prática.</p>
+                        
+                    <article class="cursosCard">
+                        <img src="imagens/curso-design-2.png" alt="Curso back-end">
+                        <div class="cursosCard-content">
+                            <h2>Back End Developer</h2>
+                            <p>Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de banco de dados e aprenderá como funciona o protocolo HTTP na prática.</p>
+                        </div>    
                     </article>
                 </div>
-                <a href="#" class="btn">Ver mais cursos</a>
+
+                <a href="#" class="btn section-btn">Ver mais cursos</a>
             </section>
         </div>
 
-        <div>
-            <section class="container">
-                <h1>Nossa escola</h1>
-                <p>Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola de tecnologia online. Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento de software até design gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um ambiente de aprendizado interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias para ter sucesso em sua carreira. Inscreva-se agora e comece sua jornada para se tornar um profissional de tecnologia bem-sucedido.</p>
-                <img src="imagens/nossa-escola.png" alt="Moça nossa escola">
+        <div class="wrapperContainer-dark2">
+            <section class="container schoolContainer" id="escola">
+                <img src="imagens/nossa-escola.png" alt="Mulher Estudando">
+                <div class="schoolContent">
+                    <h1>Nossa escola</h1>
+                    <p>Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola de tecnologia online. Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento de software até design gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um ambiente de aprendizado interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias para ter sucesso em sua carreira. Inscreva-se agora e comece sua jornada para se tornar um profissional de tecnologia bem-sucedido.</p>
+                </div>
             </section>
         </div>
-
-        <section>
-            <h1>Contatos</h1>
-            <!-- <img src="imagens/map.png" alt="Mapa"> -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25357.831569203685!2d-121.50318760556654!3d37.396241958047405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sVale%20do%20Sil%C3%ADcio%2C%20CA%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1719953405778!5m2!1spt-BR!2sbr" width="100%" height="525" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <address>
-                Av. da Liberdade, 1001<br>
-                Tel.: +351 21 123 456<br>
-                E-mail: contato@aprenser.com
-            </address>
-        </section>
+        <div class="wrapperContainer-light">
+            <section class="container contact" id="contatos">
+                <h1 class="contactTitle">Contatos</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25357.83156920368!2d-121.50318760556658!3d37.39624195804742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8091d2508639eb3f%3A0xa9743b78f6f261af!2sSan%20Antonio%20Valley%2C%20CA%2094550%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1721149238735!5m2!1spt-BR!2sbr" width="100%" height="525" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <address class="contactAdress">
+                    Av. da Liberdade, 1001<br>
+                    Tel.: +351 21 123 456<br>
+                    E-mail: contato@aprenser.com
+                </address>
+            </section>
+        </div>
     </main>
-    <footer>
-        Desenvolvido por Otávio Nepomuceno.
-    </footer>
+
+    <div class="wrapperContainer-dark">
+        <footer class="footer">
+            Desenvolvido por Otávio Nepomuceno.
+        </footer>
+    </div>
 </body>
 </html>
