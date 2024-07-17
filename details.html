@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Otávio Nepomuceno">
+    <title>Details</title>
+
+    <style>
+        details[open] { /*Seletor referente ao [atributo]*/
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Curso Front-End</h1>
+    <details>
+        <summary style="cursor: pointer;">Pré Requisitos</summary>
+        <ul>
+            <li>Conhecimento básico de computação</li>
+            <li>Força de vontade</li>
+            <li>Foco</li>
+        </ul>
+    </details>
+
+    <details open>
+        <summary>Carga Horária</summary>
+        <ul>
+            <li>180 horas</li>
+        </ul>    
+    </details>
+</body>
+</html>
