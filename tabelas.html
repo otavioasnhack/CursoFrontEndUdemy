@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Otávio Nepomuceno">
+    <meta name="description" content="aula sobre tabelas">
+    <title>Tabelas</title>
+
+    <style>
+        table {
+            background-color: beige;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            border-collapse: collapse;
+            font-family: sans-serif;
+        }
+
+        caption {
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        th {
+            border: 3px solid;
+            background-color: gray;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela de preços de cursos</caption>
+        <thead>
+            <th>Área</th>
+            <th>Curso</th>
+            <th>Investimento</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Design</td>
+                <td>InDesign</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>Photoshop</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>Illustrator</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <td rowspan="4">Development</td>
+                <td>HTML</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>Javascript</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" style="font-weight: 600;">Valores sujeitos a alteração sem aviso prévio</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
