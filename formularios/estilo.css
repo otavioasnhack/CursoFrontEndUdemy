@@ -1,0 +1,58 @@
+html {
+    background-color: gray;
+    font-family: helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: rgb(224, 224, 224);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px black;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    color: rgb(68, 66, 66);
+    font-size: 1.2em;
+}
+
+input,
+label {
+    display: block;
+    width: 350px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+input {
+    font-size: 1.2em;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.btn {
+    margin-top: 10px;
+    cursor: pointer;
+    width: fit-content;
+    /* background-color: blue; */
+
+    /* margin-left: auto; */
+}

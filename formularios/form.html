@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Otávio Nepomuceno">
+    <title>Tipos de entrada de dados</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Introdução</legend>
+            
+            <label for="">Email:</label>
+            <input type="email" name="email" placeholder="meuemail@gmail.com" required autofocus>
+            
+            <label for="filhos">Quantidade de dependentes:</label>
+            <input type="number" id="filhos" min="0" max="10">
+
+            <label for="">Data:</label>
+            <input type="date" min="2022-01-15" max="2022-12-15">
+
+            Corinthians é o maior do Brasil?
+            <input type="radio" name="timao" value="sim"> Sim
+            <input type="radio" name="timao" value="claro"> Claro
+        </fieldset>
+
+        <fieldset>
+            <legend>Área de Interesse</legend>
+
+            <label><input type="checkbox" name="interesse" value="html">HTML</label>
+            <label><input type="checkbox" name="interesse" value="css">CSS</label>
+            <label><input type="checkbox" name="interesse" value="javascript">Javascript</label>
+            <label><input type="checkbox" name="interesse" value="python">Python</label>
+            <br>
+            <label for=""> Escolha uma linguagem:
+                <select name="linguagem" required size="2">
+                    <option value="">Selecione uma</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">Javascript</option>
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                </select>
+                <br>
+            </label>
+
+            <label for=""> Selecione uma linguagem(optgroup)
+                <select name="linguagemopt" multiple>
+                    <option value="">Selecione uma</option>
+                    <optgroup label="frontend">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">Javascript</option>
+                    </optgroup>
+                    <optgroup label="backend">
+                        <option value="php">PHP</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                    </optgroup>
+                </select>
+            </label>
+            <br>
+            <label>DataList
+                <input type="text" list="linguagemList">
+                <datalist id="linguagemList">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="Javascript">
+                    <option value="Python">
+                    <option value="Java">
+                    <option value="PHP">
+                </datalist>
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+            <!--Propriedade Resize do textarea é para que o usuário n consiga redimensionar o tamanho do msm-->
+            <textarea name="msg" cols="30" rows="6" maxlength="5" style="resize: none;"></textarea>
+            <textarea cols="30" rows="6" readonly>
+CONTRATO DE UTILIZAÇÃO
+    1.1 REGRA 1
+    1.2 REGRA 2
+            </textarea>
+            <label>
+                <input type="checkbox" required> Estou de acordo com os termos do contrato
+            </label>
+            <br>
+            <input type="file"> <!--Fazer upload de arquivos-->
+            <input type="hidden" value="escondido"> <!--Dados escondidos do usuário-->
+            <br>
+            <label>Input Search
+                <input type="search"> <!--Diferencia do type text somente pela aparição de um X para apagar msg-->
+            </label>
+            <br>
+            <label>Input Range
+                <input type="range" min="0" max="10" step="2">
+            </label>
+            <br>
+            <label>Input Time
+                <input type="time">
+            </label>
+            <br>
+            <label>Input Color
+                <input type="color">
+            </label>
+            
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <h1>Meter</h1>
+    <label for="combustivel"> Nível do Combustível
+        <meter id="combustivel" min="0" max="100" low="20" high="80" value="50" optimum="50"></meter>
+    </label>
+    
+    <h1>Progress</h1>
+    <label> Porcentagem da tarefa
+        <progress max="100" value="50">50%</progress> <!--Falback é o valor passado dentro da tag, para browsers antigos-->
+    </label>    
+    
+    <h1>Output</h1>
+    <form oninput="result.value=a.value*b.value">
+        <input type="number" name="a" id="a"> X
+        <input type="number" name="b" id="b"> =
+        <output name="result" for="a b"></output>
+    </form>
+</body>
+</html>
