@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Otávio Nepomuceno">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <form action=""  autocomplete="off">
+        <fieldset>
+            <legend>Formulário de Contato</legend>
+
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome completo">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email">
+
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Mensagem</label>
+            <textarea name="message" id="message" minlength="20"  maxlength="1000" rows="7" placeholder="Fale com a gente!" required></textarea>
+
+            <button class="btn">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
