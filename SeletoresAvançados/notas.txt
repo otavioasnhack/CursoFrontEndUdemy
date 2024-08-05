@@ -1,0 +1,45 @@
+Descendência - O espaço da direita para a esquerda indica uma relação de descendência.
+EX:
+    article p b {
+        background: red; -> Toda tag b que está contida em toda tag p, contida na tag article.
+    }
+
+Filho direto - Sinal de menor (>) indica uma relação de filha direta.
+EX:
+    article p > b {
+        background: red; -> Toda tag b que é filha direta da tag p.
+    }
+
+Irmão Adjacente - Sinal de mais (+) indica uma relação de irmãos adjacentes.
+EX:
+    article p + b {
+        background: red; -> A tag b que vem imediatamente após a tag p. (Se logo após a tag p não viesse uma tag b, não funcionaria o código)
+    }
+
+Próximos irmãos - Sinal de til (~) indica uma relação de irmãos próximos.
+EX:
+    article p ~ b {
+        background: red; -> Todas tag b que vem imediatamente após a tag p.
+    }
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Seletores de Atributos [atributo]
+
+a[title] {                                          <article>
+    color: red;                                     <a> sem title </a>
+}                                                   <a title=""> com title </a>
+OBS: Todo tag a que possui o elemento title         </article>
+
+tag[atributo^="valor"] = O sinal ^ indica para selecionar os elementos que COMEÇAM com o valor passado.
+tag[atributo$="valor"] = O sinal ^ indica para selecionar os elementos que TERMINAM com o valor passado.
+
+Pseudo-classe :not()
+
+:not(a) {
+    ...;  Seleciona o elemento que não é 'a'.
+}
+
+img:not([alt]) {
+    display: none; Seleciona toda tag img que não possua o atributo alt.
+}

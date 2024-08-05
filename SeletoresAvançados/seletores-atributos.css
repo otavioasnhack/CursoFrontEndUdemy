@@ -1,0 +1,15 @@
+a[href="#"]:not(.link-ok) { /*Toda tag a que possui o atributo href com o valor # e que não possua a classe link-ok*/
+    color: aqua;
+}
+
+a[href^="https"] { /*Toda tag a que possui o atributo href que começa com o valor https*/
+    background-color: brown;
+}
+
+ul > li {
+    outline: 2px dashed blue;
+}
+
+h2 + ul {
+    background-color: gray;
+}

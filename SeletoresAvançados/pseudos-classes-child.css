@@ -1,0 +1,61 @@
+div :first-child { /*Todo elemento que está contido dentro da tag div que é o primeiro filho*/
+    color: red;
+}
+
+p:first-child { /*Seleciona o primeiro filho, se ele for uma tag p*/
+    color: aqua;
+}
+
+
+
+div :last-child { /*Todo elemento que está contido dentro da tag div que é o último filho*/
+    color: blue;
+}
+
+p:nth-child(1) { /*Seleciona o primeiro elemento se ele for uma tag p*/
+    background-color: gray;
+}
+
+a:nth-of-type(2) { /*Seleciona o segundo elemento do tipo a */
+    background-color: blueviolet;
+}
+
+p:nth-child(3) { /*Seleciona o terceiro filho do tipo p */
+    background-color: black;
+}
+
+p:first-of-type { /*Seleciona o primeiro filho do tipo p */
+    background-color: green;
+}
+
+p:last-of-type { /*Seleciona o último filho do tipo p */
+    background-color: chocolate;
+}
+
+p:nth-child(even) { /*Seleciona todo elemento p par */
+    background-color: blue;
+}
+
+p:nth-child(odd) /*ou 2n*/ { /*Seleciona todo elemento p impar */
+    background-color: red;
+}
+
+/* li:first-child {
+    background-color: aqua;
+} */
+
+/* li:nth-child(4) {
+    background-color: aqua;
+} */
+
+/* li:nth-child(7) {
+    background-color: aqua;
+} */
+
+/* li:last-child {
+    background-color: aqua;
+} */
+
+/* li:nth-child(3n - 2) {
+    background-color: aqua;
+} */

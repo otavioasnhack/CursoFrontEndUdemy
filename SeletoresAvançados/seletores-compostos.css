@@ -1,0 +1,35 @@
+article {
+    outline: 4px solid black;
+}
+
+p a {
+    background-color: aqua;
+}
+
+article > p {
+  text-transform: uppercase;  
+}
+
+body > h2 {
+    background-color: brown;
+}
+
+article + p {
+    text-transform: lowercase;
+}
+
+article h3 + p {
+    color: chartreuse;
+}
+
+article h3 ~ p {
+    border: 2px dashed blue;
+}
+
+article ~ b {
+    background-color: gray;
+}
+
+article p:not(.destaque) {
+    background-color: gray;
+}
