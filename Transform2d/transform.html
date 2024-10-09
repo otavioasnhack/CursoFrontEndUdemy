@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Otávio Nepomuceno">
+    <title>Transform</title>
+
+    <style>
+        div {
+            outline: 5px solid #888;
+            width: 200px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        .div1 p:nth-child(2) {
+            background-color: yellow;
+            width: 50%;
+            transform: translate(50px, 50px);
+            /* Passado o valor 'translate', dentro dos () o 1º valor é o eixo X e o segundo é o eixo Y, separados por vírgula ; */
+            /* No eixo X, o positivo vai para DIREITA, negativo para ESQUERDA ; */
+            /* No eixo Y, o positivo vai para BAIXO, negativo para CIMA ; */
+            /* Se houver apenas um valor dentro dos (), vai se referir ao eixo X(horizontal) */
+        }
+
+        .div2 p:nth-child(2) {
+            background-color: green;
+            transform: rotate(50deg); /* Unidade de medida em graus 'deg' e rotaciona o elemento apartir do seu ponto central */
+            /* Valores POSITIVOS para direita e valores NEGATIVOS para esquerda */
+        }
+
+        .div3 p:nth-child(2) {
+            background-color: blue;
+            transform: scale(.5, 2) /* 1 é o valor padrão, valores MAIORES que 1 é uma AMPLIAÇÃO E valores MENORES que 1 é uma REDUÇÃO */
+            /* Um único valor se refere aos dois eixos, o 1º refere a eixo X e o 2º refere ao eixo Y, separados por vírgula */
+        }
+
+        .div4 p:nth-child(2) {
+            background-color: gray;
+            transform: skew(30deg, 20deg) /* Unidade de medida em graus 'deg' e distorce a partir do eixo central */
+            /* Um único valor se refere aos dois eixos, o 1º refere a eixo X e o 2º refere ao eixo Y, separados por vírgula */
+        }
+
+        .div5 p:nth-child(2) {
+            background-color: blueviolet;
+            transform: rotate(-45deg) scale(2, 1); /* Para usar dois ou mais valores, é necessário dar um espaço entre eles e a ORDEM dos valores importam para o resultado final */
+            transform-origin: left bottom;
+            /*Essa propriedade altera o eixo(ponto) original dos elementos*/
+
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Propriedade Transform</h1>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, accusantium.</p>
+    </div>
+    
+    
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, accusantium.</p>
+    </div>
+    
+    <div class="div3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, accusantium.</p>
+    </div>
+    
+    <div class="div4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, accusantium.</p>
+    </div>
+
+    <div class="div5">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, accusantium.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Otávio Nepomuceno">
+    <title>Desafio switch</title>
+
+    <style>
+        :root {
+            --main-color: gray;
+        }
+
+        .switch input[type='checkbox'] {
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            position: absolute;
+            outline: none;
+        }
+
+        .switch span {
+            display: inline-block;
+            width: 2em;
+            height: 1em;
+            border-radius: 1em;
+            background-color: white;
+            outline: 2px solid var(--main-color);
+        }
+
+        .switch span::after {
+            content: '';
+            display: block;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            background-color: var(--main-color);
+            transition: all .4s ease-in-out;
+            transform: translateX(0);
+        }
+
+        .switch input[type='checkbox']:checked+span{
+            background-color: var(--main-color);
+            
+        }
+
+        .switch input[type='checkbox']:checked+span::after {
+            transform: translateX(100%);
+            background-color: white
+        }
+
+        .switch input[type='checkbox']:focus+span {
+            outline: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio switch</h1>
+
+    <label class="switch">
+        <input type="checkbox" checked>
+        <span></span>
+        HTML
+    </label>
+
+    <label class="switch">
+        <input type="checkbox">
+        <span></span>
+        CSS
+    </label>
+
+    <label class="switch">
+        <input type="checkbox">
+        <span></span>
+        JavaScript
+    </label>
+</body>
+</html>
