@@ -1,0 +1,239 @@
+:root {
+    --primary-color: #ff7833;
+    --second-color: #31333b;
+    --secondary-color-light: #444856;
+    --secondary-color-dark: #23252d;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    color: #e7e7e7;
+    background-color: #ccc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    background-image: url(../imagens/bg-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #7b7b7b;
+}
+
+h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+}
+
+.main-header {
+    background-color: var(--second-color);
+    background-color: rgba(49, 51, 59, .8);
+    flex: 0 0 26rem;
+}
+
+.main {
+    background-color: var(--secondary-color-light);
+    background-color: rgba(68, 72, 86, .6);
+    flex: 1 0;
+    padding: 6.5rem 6rem 7.5rem;
+}
+
+a {
+    color: inherit;
+}
+
+.main, .main-header {
+    font-size: 1.6rem;
+}
+
+.perfil-img {
+    max-width: 10rem;
+}
+
+.main-nav {
+    padding: 6.5rem 2.4rem 2.4rem;
+    text-align: right;
+
+}
+
+.main-nav li {
+    border-bottom: 1px solid #7b7b7b;
+    padding: .4rem 0;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-nav ul a {
+    text-decoration: none;
+    padding: 1.2rem 0; 
+    display: block;
+    background-color: transparent;
+    transition: padding-right .2s, background-color .4s;
+}
+
+.main-nav ul a:hover,
+.main-nav ul a:focus {
+    background-color: var(--secondary-color-light);
+    padding-right: 1rem;
+}
+
+.hightlight {
+    border-left: 2px solid var(--primary-color);
+    /* padding-left: 2em; */
+    padding: 0 0 0 2em;
+    font-size: 1.2em;
+}
+
+.tipo-article {
+    padding: 1em 0;
+}
+
+.card  {
+    max-width: 740px;
+    background-color: var(--second-color);
+}
+
+.card_content {
+    padding: .5em 1em 1em;
+}
+
+.card_content p , .card_title {
+    margin: 0;
+}
+
+.card_title {
+    font-size: 1.8em;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    gap: 1.5em;
+    justify-content: space-between;
+}
+
+.row > * {
+    flex: 1 0 0%;
+}
+
+.alternate {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.alternate li:not(:last-child) {
+    border-bottom: 1px solid;
+}
+
+.list-emoji {
+    list-style-type: '\1f642';
+}
+
+input, label, textarea, select {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type='radio'], input[type='checkbox'] {
+    display: inline;
+    width: auto;
+}
+
+input, textarea, select {
+    background-color: #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 1.6rem;
+}
+
+.btn {
+    border: 2px solid var(--secondary-color-dark);
+    background-color: var(--second-color);
+    color: white;
+    cursor: pointer;
+    padding: .8em 1.2em;
+    border-radius: 5px;
+}
+
+.btn + .btn {
+    margin-left: 2rem;
+}
+
+.btn:hover, .btn:focus {
+    background-color: var(--secondary-color-dark);
+}
+
+.btn_submit {
+    background-color: transparent;
+}
+
+.form-quiz {
+    width: calc(50% - 1.5rem);
+}
+
+.btn-stroke {
+    background-color: transparent;
+}
+
+.btn-big {
+    font-size: 1.6rem;
+}
+
+.btn-full {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-full + .btn-full {
+    margin-left: 0;
+    margin-top: 2rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td:last-child,
+.table th:last-child {
+    text-align: right;
+}
+
+.table td,
+.table th {
+    padding: 1.6rem;
+}
+
+.table:not(.table-alternate) td {
+    border-bottom: 2px solid var(--secondary-color-dark);
+}
+
+.table th {
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.table-alternate tbody tr:nth-child(odd) {
+    background-color: var(--second-color);
+}
+
+.table-vertical td:not(:last-child),
+.table-vertical th:not(:last-child) {
+    border-right: 1px solid var(--secondary-color-dark);
+}
