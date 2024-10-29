@@ -1,0 +1,68 @@
+body {
+    background-color: brown;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+
+
+.title-postit {
+    margin: 0;
+    font-weight: 400;
+}
+
+/* .postit {  / PASSO 1 /
+    width: 350px;
+    background-image: linear-gradient(135deg,  transparent 25px, white 25px);
+    filter: drop-shadow(0 0 5px black);
+    padding: 40px 30px 30px 50px;
+    box-sizing: border-box;
+} */
+
+/* .postit { / PASSO 2 /
+    width: 350px;
+    background-image:
+    linear-gradient(135deg,  transparent 25px, rgb(167, 157, 157) 25px),
+    linear-gradient(135deg,  transparent 25px, white 25px);
+    background-size: 34px 34px, 100%;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 5px black);
+    padding: 40px 30px 30px 50px;
+    box-sizing: border-box;
+} */
+
+.postit {
+    /* flex-basis: calc(33% - 1em); */
+    flex-basis: clamp(300px, calc(33% - 1em),400px);
+    flex-grow: 1;
+    background-image: linear-gradient(135deg,  transparent 25px, white 25px);
+    filter: drop-shadow(0 0 5px black);
+    padding: 40px 30px 30px 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.postit::before {
+    content: '';
+    display: block;
+    width: 36px;    
+    height: 36px;
+    background-image: linear-gradient(135deg,  transparent 25px, rgb(131, 128, 128) 25px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: drop-shadow(2px 2px 3px rgba(0,0,0,.3));
+}
+
+.container-postit {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 80%;
+    margin: 0 auto;
+}
