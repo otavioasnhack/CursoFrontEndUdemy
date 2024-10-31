@@ -1,0 +1,34 @@
+Media Type
+
+- usando o atributo media - media='screen' (tela, monitor),
+ media='print' (impressão física, pdf), 
+ media='handheld' (aparelhos mobiles, celulares)
+
+
+Media Queries
+
+- Verifica o tamanho da tela (consulta especificações de mídia)
+- min / max width
+- min / max height
+- orientation (retrato ou paisagem)
+- aspect radio (proporção da altura e largura)
+- resolution (resolução da tela do aparelho)
+- prefers-color-scheme (escolha entre o tema light ou dark)
+- prefers-reduced-motion (redução de mídia)
+
+
+Meta tag <viewport>
+
+- Correlação entre o tamanho da tela em relação ao CSS.
+
+Recursos Flexíveis 
+
+- Adapta imagens, vídeos aos diferentes tamanhos de tela
+
+
+Grids Fluídas
+
+- Layouts prontos para desenvolver a aplicação responsiva
+- float/clear
+- flexbox
+- css grid
