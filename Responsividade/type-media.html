@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Type</title>
+
+    <link rel="stylesheet" href="type-media.css" media="print">
+    <!-- Ou posso usar a tag link após o style para sobrescrever, sendo desnecessário o @media screen na tag style -->
+    <style>
+
+        @media screen {
+            body {
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+        }
+    }
+/* 
+        @media print {
+            body {
+                color: black;
+                font-family: serif;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <h1>Media Types</h1>
+
+    <a href="https://www.google.com/" title="Link pro google">Google</a>
+</body>
+</html>
