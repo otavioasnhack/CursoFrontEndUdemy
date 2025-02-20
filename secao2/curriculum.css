@@ -1,0 +1,22 @@
+
+h1 {
+    text-align: center;
+    background-color: rgba(0, 89, 255, 0.514);
+    width: 80%;
+    color: rgb(29, 5, 114);
+    /* font-weight: 600; */
+    font-family: sans-serif;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+h2 {
+    background-color: rgb(190, 190, 190);
+    width: 80%;
+    color: rgb(29, 5, 114);
+    padding: 5px;
+    border-bottom: 2px solid rgb(29, 5, 114);
+}
